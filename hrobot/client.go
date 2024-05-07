@@ -7,7 +7,6 @@ import (
 	"encoding/json"
 	"fmt"
 	"io"
-	"io/ioutil"
 	"log"
 	"net/http"
 	"net/url"
@@ -184,7 +183,7 @@ func (c *Client) Do(r *http.Request, v interface{}) (*Response, error) {
 		*/
 	}
 
-	body, err := ioutil.ReadAll(resp.Body)
+	body, err := io.ReadAll(resp.Body)
 	if err := json.Unmarshal(body, &v); err != nil { // Parse []byte to the go struct pointer
 		fmt.Println(io.Copy(os.Stdout, bytes.NewReader(body)))
 		return response, err
