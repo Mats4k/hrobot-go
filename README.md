@@ -20,7 +20,7 @@ import (
     "os"
 	"log"
 
-	"github.com/floshodan/hrobot-go/hrobot"
+	"github.com/Mats4k/hrobot-go/hrobot"
 )
 
 func main() {

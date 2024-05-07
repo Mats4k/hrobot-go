@@ -1,6 +1,6 @@
 package hrobot
 
-import "github.com/floshodan/hrobot-go/hrobot/schema"
+import "github.com/Mats4k/hrobot-go/hrobot/schema"
 
 // Converts an json Key to SSHKey struct
 func SSHKeyFromSchema(s schema.Key) *SSHKey {

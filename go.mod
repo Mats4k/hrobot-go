@@ -1,4 +1,4 @@
-module github.com/floshodan/hrobot-go
+module github.com/Mats4k/hrobot-go
 
 go 1.16
 

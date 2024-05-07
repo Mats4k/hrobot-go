@@ -4,7 +4,7 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/floshodan/hrobot-go/hrobot/schema"
+	"github.com/Mats4k/hrobot-go/hrobot/schema"
 )
 
 type WOLClient struct {
